@@ -6,11 +6,21 @@ public class SearchHandel {
 	
 	private String planName;
 	private String planStatus;
-	private LocalDate startDate;
-	private LocalDate endDate;
+	private String gender;
+	private String startDate;
+	private String endDate;
 	
 	
-	
+
+
+	@Override
+	public String toString() {
+		return "SearchHandel [planName=" + planName + ", planStatus=" + planStatus + ", gender=" + gender
+				+ ", startDate=" + startDate + ", endDate=" + endDate + "]";
+	}
+
+
+
 
 	public String getPlanName() {
 		return planName;
@@ -40,28 +50,42 @@ public class SearchHandel {
 
 
 
-	public LocalDate getStartDate() {
+	public String getStartDate() {
 		return startDate;
 	}
 
 
 
 
-	public void setStartDate(LocalDate startDate) {
+	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
 
 
 
 
-	public LocalDate getEndDate() {
+	public String getEndDate() {
 		return endDate;
 	}
 
 
 
 
-	public void setEndDate(LocalDate endDate) {
+	public String getGender() {
+		return gender;
+	}
+
+
+
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+
+
+
+	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 

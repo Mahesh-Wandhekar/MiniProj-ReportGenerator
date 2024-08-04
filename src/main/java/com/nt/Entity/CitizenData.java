@@ -28,7 +28,7 @@ public class CitizenData {
 	private String planName;
 	private String planStatus;
 	private LocalDate startDate;
-	private LocalDate endDate;
+	private LocalDate endDate;  
 	private Double BenifitAmount;
 	private String DenialReason;
 	private LocalDate TerminatedDate;
@@ -114,8 +114,8 @@ public class CitizenData {
 
 
 
-	public void setStartDate(LocalDate startDate) {
-		this.startDate = startDate;
+	public void setStartDate(LocalDate string) {
+		this.startDate = string;
 	}
 
 
@@ -186,6 +186,19 @@ public class CitizenData {
 
 	public void setTerminatedReason(String terminatedReason) {
 		TerminatedReason = terminatedReason;
+	}
+
+	
+	
+
+
+
+	@Override
+	public String toString() {
+		return "CitizenData [citizenId=" + citizenId + ", citizenName=" + citizenName + ", gender=" + gender
+				+ ", planName=" + planName + ", planStatus=" + planStatus + ", startDate=" + startDate + ", endDate="
+				+ endDate + ", BenifitAmount=" + BenifitAmount + ", DenialReason=" + DenialReason + ", TerminatedDate="
+				+ TerminatedDate + ", TerminatedReason=" + TerminatedReason + "]";
 	}
 
 
